@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Save Your Passwords</title>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+    href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Josefin+Sans:wght@100;200;300;400;500;600;700&family=Qwitcher+Grypen:wght@400;700&family=Waterfall&display=swap"
+    rel="stylesheet"
+    />
+    <link rel="icon" href="https://cdn1.iconfinder.com/data/icons/hawcons/32/698906-icon-25-key-512.png">
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./responsive.css" />
+  </head>
+  <body>
+    <div class="overlay"></div>
+
+    <!-- start main buttons page -->
+    <!-- start main buttons page -->
+    <!-- start main buttons page -->
+    <!-- start main buttons page -->
+    <!-- start main buttons page -->
+
+
+    <section class="firstBtn">
+        <div class="btn req" id="request">
+            <div class="btnText"><h1>Request</h1></div>
+            <div class="btnIcon"><i class="far fa-eye"></i></div>
+        </div>
+    </section>
+    <section class="secondBtn">
+        <div class="btn save" id="save">
+            <div class="btnText"><h1>Save</h1></div>
+            <div class="btnIcon"><i class="far fa-save"></i></div>
+        </div>
+    </section>
+    <section class="thirdBtn">
+        <div class="btn edit" id="edit">
+            <div class="btnText"><h1>Edit</h1></div>
+            <div class="btnIcon"><i class="fas fa-edit"></i></div>
+        </div>
+    </section>
+    <section class="fourthBtn">
+        <div class="btn delete" id="delete">
+            <div class="btnText"><h1>Delete</h1></div>
+            <div class="btnIcon"><i class="fas fa-trash-alt"></i></div>
+        </div>
+    </section>
+    
+
+    <!-- start request page -->
+    <!-- start request page -->
+    <!-- start request page -->
+    <!-- start request page -->
+    <!-- start request page -->
+
+    <div class="requestDiv">
+      <div class="wrapper">
+        <div class="search-div">
+          <div class="search-div-container">
+            <div class="header"><h1>which password are you looking for ?</h1></div>
+            <div class="input"><input type="text" name="req-platform" id="req-platform"></div>
+
+          </div>
+
+        </div>
+        <div class="container">
+          <div class="content" id="req-page-content"><h1>Oops! Looks like there's nothing to display</h1></div>
+        </div>
+      </div>
+    </div> 
+
+    <!-- start savePage -->
+    <!-- start savePage -->
+    <!-- start savePage -->
+    <!-- start savePage -->
+    <!-- start savePage -->
+
+    <div class="saveDiv">
+      <div class="container">
+        <div class="header">Which Password Would You Like To Save ?</div>
+        <div class="items">
+          <div class="item twitter"><i class="fab fa-twitter"></i></div>
+          <div class="item facebook"><i class="fab fa-facebook"></i></div>
+          <div class="item google" id="google-icon-container">
+            <i class="fab fa-google" id="google-icon">
+              <img src="./icons/Google__G__Logo.svg.png" alt="" id="google-img"
+            /></i>
+          </div>
+          <div class="item instagram"><i class="fab fa-instagram"></i></div>
+          <div class="item twitch"><i class="fab fa-twitch"></i></div>
+          <div class="item reddit"><i class="fab fa-reddit"></i></div>
+          <div class="item tiktok">
+              
+            <i id="tiktok-icon" class="fab fa-tiktok">
+                <img id="tiktok-img" src="./icons/tik_tok_logo_png512.png" alt="">
+            </i>
+        
+        </div>
+          <div class="item snapchat">
+            <i class="fab fa-snapchat-square" id="snap-icon">
+              <img
+                id="snap-img"
+                src="./icons/482424fc45dc80f5fa0fc192b8d412e8.png"
+                alt=""
+              />
+            </i>
+          </div>
+          <div class="item spotify"><i class="fab fa-spotify"></i></div>
+          <div class="item discord"><i class="fab fa-discord"></i></div>
+        </div>
+        <div class="sumElse">
+          <div id="none-of-these-btn">None Of These</div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- start save form -->
+    <!-- start save form -->
+    <!-- start save form -->
+    <!-- start save form -->
+    <!-- start save form -->
+    <!-- start save form -->
+
+
+    <div class="save-form">
+        <div class="header" id="save-from-header"><h1>Please enter your information</h1></div>
+            <div class="content fix-dom-double-id-problem" id="save-form-content">
+            <div class="toBeDeleted2 to-loop">
+                <div></div>
+                <div class="username-div">
+                    <label for="username">username</label>
+                    <input type="text" name="username" id="username" >
+                </div>
+                <div class="email-div">
+                    <label for="email">email</label>
+                    <input type="email" name="email" id="email">
+                </div>
+                <div class="password-div">
+                    <label for="password">password</label>
+                    <input type="password" name="password" id="password">
+                </div>
+            </div>
+        </div>
+         <div class="extra-btn-div" id="save-form-btns-div">
+            <div class="extra-acc-div">
+                <button class="extra-account-btn add-acc-btn"><i class="fas fa-plus"></i></button>
+                <p class="extra-acc-p">
+                    Extra Account ?
+                </p>
+            </div>
+             <div class="ready-div">
+                 <p class="extra-acc-p save-p">
+                     Save
+                 </p>
+                <button id="save-btn-an" class="extra-account-btn save-btn"><i class="fas fa-check"></i></button>
+             </div>
+         </div>
+    </div>
+
+    <!-- start edit page -->
+    <!-- start edit page -->
+    <!-- start edit page -->
+    <!-- start edit page -->
+    <!-- start edit page -->
+
+    <div class="editDiv ">
+      <div class="wrapper">
+        <div class="search-div">
+          <div class="search-div-container">
+            <div class="header"><h1>what would you like to edit ?</h1></div>
+            <div class="input"><input type="text" id="edit-platform"></div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="content" id="edit-page-content"></div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="deleteDiv">
+      <div class="wrapper">
+        <div class="search-div">
+          <div class="search-div-container">
+            <div class="header"><h1>what would you like to delete ?</h1></div>
+            <div class="input"><input type="text" id="delete-platform"></div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="content" id="delete-page-content"></div>
+        </div>
+      </div>
+    </div>
+    </div>
+
+
+    <script src="./script.js"></script>
+    <script src="./request.js"></script>
+    <script src="./edit.js"></script>
+    <script src="./delete.js"></script>
+  </body>
+</html>

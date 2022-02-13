@@ -1,0 +1,978 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+.fonts{
+    font-family: 'Dancing Script', cursive;
+font-family: 'Josefin Sans', sans-serif;
+font-family: 'Qwitcher Grypen', cursive;
+font-family: 'Waterfall', cursive;
+}
+
+
+body{
+
+    background-color: #2b4162;
+    background-image: linear-gradient(315deg, #2b4162 0%, #12100e 74%); 
+    width: 100%;
+    height: 100vh;
+    min-height: 600px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+}
+
+section{
+    width: 50%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.btn{
+    width: 80%;
+    height: 80%;
+    border-radius: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.335);
+    background-color: #0d0a0b;
+    background-image: linear-gradient(315deg, #141517 20%, #243249 74%); 
+    cursor: pointer;;
+    transition: all ease 2000ms;
+    display: flex;
+
+}
+
+.btn:hover{
+    width: 88%;
+    height: 92%;
+    transition: all ease 200ms;
+}
+
+.btnIcon ,.btnText{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btnText{
+    border-radius: 50px 0px 0px 50px;
+}
+.btnIcon{
+    border-radius: 0px 50px 50px 0px; 
+}
+h1{
+    font-size: 5rem;
+    color: #fff;
+    font-family: 'Dancing Script', cursive;
+    /* font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Qwitcher Grypen', cursive;
+    font-family: 'Waterfall', cursive; */
+}
+.btnIcon i{
+    color: #fff;
+    font-size: 5rem;
+}
+.req{
+    margin-left: 80px;
+    margin-top: 20px;
+}
+.save{
+    margin-right: 80px;
+    margin-top: 20px;
+}
+.edit{
+    margin-left: 80px;
+    margin-bottom: 20px;
+}
+.delete{
+    margin-right: 80px;
+    margin-bottom: 20px;
+}
+
+.firstBtn .btn:hover{
+    background-color: #2d3436;
+    background-image: linear-gradient(315deg, #2d3436 0%, #d3d3d3 74%);
+    
+    border: none;
+}
+.secondBtn .btn:hover{
+    border: none;
+
+    background-color: #182b3a;
+    background-image: linear-gradient(315deg, #182b3a 0%, #20a4f3 74%);
+    
+}
+.thirdBtn .btn:hover{
+    border: none;
+    background-color: #7a7adb;
+background-image: linear-gradient(315deg, #170e13 0%, #7a7adb 74%);
+
+}
+.fourthBtn .btn:hover{
+    background-color: #000000;
+background-image: linear-gradient(315deg, #000000 0%, #b82e1f 74%);
+border: none;
+}
+
+/* start save page styling */
+/* start save page styling */
+/* start save page styling */
+/* start save page styling */
+/* start save page styling */
+/* start save page styling */
+
+
+
+.saveDiv{
+    width: 70%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+    
+}
+.saveDiv .container{
+    width: 100%;
+    height: 100%;
+}
+.saveDiv .container .header{
+    color: white;
+    height: 20%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    font-weight: bolder;
+    font-family: 'Dancing Script', cursive;
+    /* font-family: 'Waterfall', cursive; */
+}
+.saveDiv .container .items{
+    width: 100%;
+    height: 60%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    overflow: hidden;
+    padding: 10px 0px;
+}
+.saveDiv .container .sumElse{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.saveDiv .container .items .item{
+    background-color: #000000;
+    background-image: linear-gradient(315deg, #000000 0%, #414141 74%);
+    height: 38%;
+    width: 14%;
+    border-radius: 40px;
+    margin: 1rem;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 5rem;
+    color: #fff;
+    transition: all ease-in-out 200ms;
+    overflow: hidden;
+    border-left: 3px solid rgba(255, 255, 255, 0.349);
+}
+.saveDiv .container .items .item:hover{
+
+    /* border-radius: 50%; */
+    width: 17%;
+    height: 45%;
+    margin: 0px;
+    font-size: 6rem;
+    background: #fff;
+    transform: rotate(1turn);
+    transition-duration: 800ms;
+
+}
+
+.saveDiv .container .sumElse div{    /* ready*/
+    background-color: #000000;
+    background-image: linear-gradient(315deg, #000000 0%, #414141 74%);
+    width: 80%;
+    height: 70%;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    cursor: pointer;
+    transition: ease-in-out all 200ms;
+    font-family: 'Dancing Script', cursive;
+    color: #fff;
+    font-weight: bolder;
+    border-top: solid 1px rgba(255, 255, 255, 0.349);
+    border-left: solid 3px rgba(255, 255, 255, 0.349);
+}
+
+.saveDiv .container .sumElse div:hover{  /* ready */
+    width: 90%;
+    height: 90%;
+    border-radius: 50px;
+    font-size: 4rem;
+    background: #fff;
+    color: #000;
+    
+}
+
+.saveDiv .container .items .facebook:hover{  /* ready*/
+    color: #1B74E4;
+}
+    
+.saveDiv .container .items .twitter:hover{   /* ready*/
+    color: #5DA9DD;
+}
+
+.saveDiv .container .items .instagram i:hover{  /* ready*/
+    
+    background-image: radial-gradient(circle farthest-corner at 35% 90%, #fec564, transparent 50%), radial-gradient(circle farthest-corner at 0 140%, #fec564, transparent 50%), radial-gradient(ellipse farthest-corner at 0 -25%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 20% -50%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 0, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 60% -20%, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 100%, #d9317a, transparent), linear-gradient(#6559ca, #bc318f 30%, #e33f5f 50%, #f77638 70%, #fec66d 100%);
+    background-size: 100%;
+    background-clip: unset;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
+}
+.fa-instagram{
+    padding: 3rem;
+    border-radius: 20px;
+}
+.saveDiv .container .items .twitch:hover{
+    color: #8A43F2 ;
+}
+.saveDiv .container .items .reddit:hover{
+
+    color: #F24100 ;
+}
+.saveDiv .container .items .snapchat:hover{
+
+    color: #F2EF00 ;
+}
+.saveDiv .container .items .spotify:hover{
+
+    color: #1CCC5B ;
+}
+.saveDiv .container .items .discord:hover{
+
+    color: #5460E6 ;
+}
+
+#google-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all ease 100ms;
+    padding: 40px 43px;
+ }
+#google-img{
+     width: 80px;
+     height: 80px;
+     display: none;
+     transition: all ease 500ms;
+     
+ }
+#google-img:hover{
+    width: 94px;
+    height: 94px;
+ }
+
+#snap-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all ease 100ms;
+    padding: 40px 43px;
+}
+
+#snap-img{
+    width: 95px;
+    height: 95px;
+    display: none;
+    transition: all ease 500ms;
+    
+ }
+#snap-img:hover{
+    width: 120px;
+    height: 120px;
+ }
+#tiktok-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all ease 100ms;
+    padding: 40px 43px;
+}
+
+#tiktok-img{
+    width: 80px;
+    height: 80px;
+    display: none;
+    transition: all ease 500ms;
+    
+ }
+#tiktok-img:hover{
+    width: 100px;
+    height: 100px;
+ }
+
+ /* end save page
+ /* end save page
+ /* end save page
+ /* end save page*/
+ 
+
+.save-form{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    max-height: 60%;
+    border-radius: 20px;
+    background-color: #000000;
+    background-image: linear-gradient(315deg, #414141 0%, #272626 74%);
+    position: absolute;
+    opacity: 0;
+    z-index: -10;
+}
+.save-form .header{
+    width: 100%;
+    height: 100px;
+    border-bottom: lightblue 1px solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.save-form .header h1{
+    font-size: 2rem;
+
+}
+.save-form .content{
+    width: 100%;
+    max-height: 260px;
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+
+.save-form .content .toBeDeleted{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+/* .save-form .content .toBeDeleted .save-form-content-first-div{
+    width: 5%;
+    height: 90px;
+    margin-right: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+    font-size: 0.8rem;
+    position: relative;
+} */
+.fa-times{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    cursor: pointer;
+    color: #fff;
+}
+
+.save-form .content .toBeDeleted .save-form-content-second-div{
+    width: 80%;
+    height: 90px;
+    background: rgba(255, 255, 255, 0.178);
+    border-radius: 20px;
+    margin-top: 20px;
+    transition: ease 300ms all;
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem;
+    /* margin-right: 28px; */
+    position: relative;
+}
+
+/* this one  */
+/* this one  */
+/* this one  */
+.save-form .content .toBeDeleted2{
+    width: 80%;
+    height: 90px;
+    background: rgba(255, 255, 255, 0.178);
+    border-radius: 20px;
+    /* margin-top: 20px;
+    margin-bottom: 5px; */
+    transition: ease 300ms all;
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem;
+    margin-left: 10%;
+}
+
+.save-form .content .toBeDeleted div , .save-form .content .toBeDeleted2 div{
+    width: 100%;
+    height: 33%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.save-form .content .toBeDeleted label , .save-form .content .toBeDeleted2 label{
+    margin-right: 1rem;
+    margin-left: 1.7rem;
+    font-size: 1.5rem;
+    color: #fff;
+    font-family: 'Josefin Sans', sans-serif;
+}
+.save-form .content .toBeDeleted input , .save-form .content .toBeDeleted2 input{
+    width: 230px;
+    height: 80%;
+    border: none;
+    border-radius: 20px;
+    padding: 0.5rem;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.save-form .extra-btn-div{
+    display: flex;
+    flex-direction: row-reverse;
+    width: 100%;
+    height: 100px;
+}
+
+.save-form .extra-acc-div{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center; 
+    flex-direction: row-reverse ;
+}
+.save-form .ready-div{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+
+}
+.save-form .save-p{
+    margin-left: 1.5rem;
+}
+
+.save-form .extra-acc-p{
+    font-family: 'Dancing Script', cursive;
+    font-size: 1.6rem;
+    color: #fff;
+    margin-right: 1rem;
+    
+}
+
+.save-form .extra-account-btn{
+    margin-right: 1rem;
+    padding: 3px 5px;
+    font-size: 1.3rem;
+    color: #fff;
+    background-color: #5b6467;
+background-image: linear-gradient(315deg, #5b6467 0%, #8b939a 74%);
+border: none;
+border-radius: 10px;
+cursor: pointer;
+}
+
+.save-form .extra-account-btn:hover{
+    color: #a1abb3;
+    background: #fff;
+    transition: ease all 500ms;
+}
+
+.save-form .save-btn:hover{
+    background-color: rgb(99, 197, 2);
+    color: #fff;
+}
+.fa-check{
+    pointer-events: none;
+}
+.fa-plus{
+    pointer-events: none;;
+}
+.save-btn-aimation{
+    transform: rotate(1turn);
+    transition-duration: 800ms;
+}
+
+.save-form .save-btn{
+    opacity: 40%;
+    pointer-events: none;
+}
+
+
+
+/* end save form styling */
+/* end save form styling */
+/* end save form styling */
+/* end save form styling */
+/* end save form styling */
+/* end save form styling */
+
+
+/* start save different platform form */
+/* start save different platform form */
+/* start save different platform form */
+/* start save different platform form */
+/* start save different platform form */
+
+#save-from-header{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+#save-from-header .s-n-p-h{
+    height: 50%;    
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#save-from-header .chose-platform-inp-div{
+display: flex;
+justify-content: center;
+align-items: center;
+width: 100%;
+height: 50%;
+}
+#save-from-header .chose-platform-inp-div input{
+    width: 200px;
+    height: 30px;
+    border: none;
+    border-radius: 20px;
+    padding: 15px;
+    font-size: 1.3rem;
+    text-align: center;
+}
+#save-from-header .chose-platform-inp-div label{
+    color: #fff;
+    font-size: 1.3rem;
+    margin-right: 20px;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.error-msg-save-form{
+    margin-top: 10px;
+    font-size: 1rem;
+    color: red;
+    margin-bottom: 10px;
+}
+
+
+/* start request div styling*/
+/* start request div styling*/
+/* start request div styling*/
+/* start request div styling*/
+
+.requestDiv , .editDiv , .deleteDiv{
+    width: 80%;
+    height: 70%;
+    opacity: 0;
+    position: absolute;
+    z-index: -2;
+}
+.requestDiv .wrapper , .editDiv .wrapper,.deleteDiv .wrapper{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.requestDiv .wrapper .search-div , .editDiv .wrapper .search-div,.deleteDiv .wrapper .search-div{
+    width: 100%;
+    height: 25%;
+    display: flex;
+    justify-content: center;
+}
+.requestDiv .wrapper .search-div .search-div-container , .editDiv .wrapper .search-div .search-div-container,.deleteDiv .wrapper .search-div .search-div-container{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.requestDiv .wrapper .search-div .search-div-container .header , .editDiv .wrapper .search-div .search-div-container .header,.deleteDiv .wrapper .search-div .search-div-container .header{
+    width: 100%;
+    height: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.requestDiv .wrapper .search-div .search-div-container .header h1,.editDiv .wrapper .search-div .search-div-container .header h1,.deleteDiv .wrapper .search-div .search-div-container .header h1{
+    font-size: 2rem;
+}
+.requestDiv .wrapper .search-div .search-div-container .input,.editDiv .wrapper .search-div .search-div-container .input,.deleteDiv .wrapper .search-div .search-div-container .input{
+    width: 100%;
+    height: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.requestDiv .wrapper .search-div .search-div-container .input input,.editDiv .wrapper .search-div .search-div-container .input input,.deleteDiv .wrapper .search-div .search-div-container .input input{
+    width: 230px;
+    height: 30px;
+    border-radius: 20px;
+    border: none;
+    padding: 15px;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    font-family: 'Josefin Sans', sans-serif;
+    text-align: center;
+}
+
+.requestDiv .wrapper .container , .editDiv .wrapper .container,.deleteDiv .wrapper .container{
+    width: 100%;
+    height: 75%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.requestDiv .wrapper .container .content,.editDiv .wrapper .container .content,.deleteDiv .wrapper .container .content{
+    width: 90%;
+    height: 90%;
+    padding: 25px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    border: 1px #fff solid;
+    border-radius: 20px;
+    overflow: auto;
+}
+.requestDiv .wrapper .container .content h1,.editDiv .wrapper .container .content h1,.deleteDiv .wrapper .container .content h1{
+    font-size: 2rem;
+    font-family: 'Josefin Sans', sans-serif;
+    margin-top: 2rem;
+}
+.req-page-item{
+    width: 100px;
+    height: 100px;
+    background-color: #b8c6db;
+    background-image: linear-gradient(315deg, #b8c6db 0%, #f5f7fa 74%);
+    color: #000;
+    margin: 0px 20px 20px 20px;
+    border-radius: 20px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    font-size: 130%;
+    cursor: pointer;
+    font-family: 'Josefin Sans', sans-serif;
+    transition: 300ms ease;
+
+}
+.req-page-item:hover{
+    width: 120px;
+    height: 120px;
+    font-size: 180%;
+    background-color: #d9e4f5;
+    background-image: linear-gradient(315deg, #d9e4f5 0%, #f5e3e6 74%);
+}
+.overlay{
+    background-color: rgba(0, 0, 0, 0.575);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -999;
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.active-overlay{
+    opacity: 100;
+    z-index: 1000;
+    transition: ease 500ms;
+}
+.bord-class{
+    position: absolute;
+    width: 40%;
+    max-height: 70%;
+    background-color: #fff;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+    align-items: center;
+    padding: 20px;
+}
+.req-page-acc-window{
+    width: 90%;
+    min-height: 130px;
+    border-radius: 20px;
+    margin: 10px 0px;
+    background-color: #000000;
+    background-image: linear-gradient(147deg, #000000 0%, #04619f 74%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+}
+
+.req-page-user-div{
+    width: 100%;
+    height: 43px;
+    display: flex;
+    align-items: center;
+}
+.req-page-email-div{
+    width: 100%;
+    height: 43px;
+    display: flex;
+    align-items: center;
+}
+.req-page-password-div{
+    width: 100%;
+    height: 43px;
+    display: flex;
+    align-items: center;
+}
+.req-page-lable{
+height: 100%;
+width: 25%;
+display: flex;
+justify-content: center;
+align-items: center;
+font-size: 1.2rem;
+font-family: 'Josefin Sans', sans-serif;
+color: #fff;;
+}
+
+.req-page-expose{
+    width: 55%;
+    height: 70%;
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 5px;
+    font-size: 0.8rem;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+
+}
+
+.copy-btn{
+width: 20%;
+height: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.copy-btn button{
+    padding: 3px;
+    font-size: 1rem;
+    border: none;
+    background-color: #fff;
+    font-family: 'Josefin Sans', sans-serif;
+    border-radius: 20px;
+    cursor: pointer;
+
+}
+
+/*start edit page*/
+/*start edit page*/
+/*start edit page*/
+/*start edit page*/
+/*start edit page*/
+
+.edit-page-item{
+    width: 100px;
+    height: 100px;
+    background-color: #b8c6db;
+    background-image: linear-gradient(315deg, #b8c6db 0%, #f5f7fa 74%);
+    color: #000;
+    margin: 0px 20px 20px 20px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 130%;
+    cursor: pointer;
+    font-family: 'Josefin Sans', sans-serif;
+    transition: 300ms ease;
+
+}
+.edit-page-item:hover{
+
+    font-size: 120%;
+    background-color: #d9e4f5;
+    background-image: linear-gradient(315deg, #d9e4f5 0%, #f5e3e6 74%);
+}
+
+.edit-page-acc-window{
+    width: 90%;
+    min-height: 130px;
+    border-radius: 20px;
+    margin: 10px 0px;
+    background-color: #485461;
+    background-image: linear-gradient(315deg, #485461 0%, #28313b 74%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+}
+
+.edit-page-expose{
+    width: 80%;
+    height: 70%;
+    padding: 3px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.edit-page-expose input{
+    padding: 8px;
+    border: none;
+    border-radius: 15px;
+    width: 230px;
+}
+.edit-page-expose input:focus{
+    outline: none;
+}
+.edit-btn{
+    width: 20%;
+height: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.edit-btn button{
+    padding: 7px;
+    font-size: 1rem;
+    border: none;
+    background-color: #fff;
+    font-family: 'Josefin Sans', sans-serif;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.edit-page-popUp{
+    position: absolute;
+    display: flex;
+    width: 40%;
+    height: 20%;
+    background-color: #fff;
+    border-radius: 20px;
+    transition: ease 10000ms all;
+    opacity: 0;
+}
+
+.edit-page-confirm-div{
+    width: 70%;
+    min-height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.edit-page-confirm-div button{
+    font-size: 1.5rem;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    background-color: #000000;
+background-image: linear-gradient(147deg, #000000 0%, #434343 74%);
+color: #fff;
+font-family: 'Josefin Sans', sans-serif;
+cursor: pointer;
+transition: ease 200ms all;
+}
+.edit-page-confirm-div button:hover{
+    background: #fff;
+    color: #2C2C2C;
+    box-shadow: #2C2C2C 0px 0px 20px 0px;
+}
+
+.delete-page-acc-window{
+    width: 90%;
+    min-height: 130px;
+    border-radius: 20px;
+    margin: 10px 0px;
+    background-color: #000000;
+background-image: linear-gradient(315deg, #000000 0%, #b82e1f 74%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    position: relative;
+}
+
+.trs-btn-to-del-acc{
+    position: absolute;
+    cursor: pointer;
+    color: #fff;
+    font-size: 2rem;
+}
+.trs-btn-to-del-acc:hover{
+    color: #b8c6db;
+}
+
+
+
+
+
+
+
+.inActive{
+    transition: ease 200ms; 
+    opacity: 0;
+}    
+.disable{
+    display: none;
+}    
+.active{
+    transition: ease 200ms all;
+    opacity: 100%;
+    z-index: 1;
+}    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.pages{
+    display: none;
+}
